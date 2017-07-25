@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	// The Incredible Automatic Grade Assigner!
+
+	// Write a function called gradeAssigner. 
+
+function gradeAssigner(studentScores) {
+
+	// The function should have a parameter called studentScores
+
+	for (var score of studentScores) {
+
+	// Use a switch statement to print a letter grade for each percent in studentScores as follows:
+
+	// 90 and above gets an A
+	// 80 and above gets a B
+	// 70 and above gets a C
+	// 60 and above gets a D
+	// anything below 60 gets an F
+
+			switch (true) {
+
+				case score >= 90:
+					console.log("90 and above gets an A");
+					break;
+
+				case score >= 80:
+					console.log("80-89 gets a B");
+					break;
+
+				case score >= 70:
+					console.log("70-79 gets a C");
+					break;
+
+				case score >= 60:
+					console.log("60-69 gets a D");
+					break;
+
+				default:
+					console.log("Anything below 60 gets an F");
+
+			}
+		}
+	}
+	gradeAssigner([79, 95, 86, 91, 67]);
+
+	 //studentScores is a placeholder for an argument that will be passed into the function as an array. 
+	 //This array will consist of only numbers that represent a grade out of 100 on a science test. eg: [89, 71, 63, 95, 58]
+	// Remember to call your function and pass in the proper parameter!
+	
+</script>
+
+</body>
+</html>

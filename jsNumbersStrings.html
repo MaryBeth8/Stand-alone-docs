@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	</head>
+
+	<body>
+
+		<h1>JavaScript is so fun and it's my favorite!</h1>
+		
+		<!-- All the JavaScript goes here-->
+		<script type="text/javascript">
+			
+			// NUMBERS EXERCISES
+
+			// Calculate your maximum heart rate
+			var myAge = 34;   /// Fill in with your age
+			console.log("My age is: " + myAge);
+			var maxHeartRate = (220 - myAge);
+			console.log("My max heart rate is: " + maxHeartRate);
+
+			// Calculate your moderate exercise heart rate range
+			var modHeartRateLow = maxHeartRate * .5;
+			console.log("Low heart rate for moderate exercise: " + modHeartRateLow);
+			var modHeartRateHigh = maxHeartRate * .7;
+			console.log("High heart rate for moderate exercise: " + modHeartRateHigh);
+
+			// Calculate the area of a circle
+			var area = 0;
+			var pi = 3.14;
+			var diameter = 20;   // Fill in with the diameter of a circle in inches
+
+			area = pi * diameter;
+			console.log("The area of a circle with a diameter of " + diameter + " inches is " + area + "sq. in");
+
+
+			// STRINGS EXERCISES
+
+			// Mini poem
+			var poemStrOne = "Oh how they trust\n";    // Change this line
+			var poemStrTwo = "that the wind will carry them\n";    // Change this line
+			var poemStrThree = "and so it does\n";    // Change this line
+			var poemStrFour = "and so it does\n";    // Change this line
+			var poem = poemStrOne + poemStrTwo + poemStrThree + poemStrFour;
+			console.log(poem);
+
+			// How long was your poem?
+			var poemLength = poemStrOne.length + poemStrTwo.length + poemStrThree.length + poemStrFour.length;    // Fill this in with code that will find the length of the "poem" variable
+			console.log("My poem was " + poemLength + " characters long.");
+
+			// What is the character that exists 20 characters from the end of your poem?
+			var someChar = poem[poem.length - 20];   /// Fill this in with code that will find the 20th character from the end
+			console.log("The 20th character from the end of my poem is: " + someChar);
+
+		</script>
+
+	</body>
+
+</html>
