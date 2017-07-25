@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+		// WHILE LOOP
+		// Write a while loop that runs until i becomes greater than 100.
+ 
+		// If i is an even number, push the string "Bubble" onto the bubblePop array.
+ 
+		// If i is divisible by 6, push the string "Pop" onto the bubblePop array.
+ 
+		// When the while loop is done running, print the bubblePop array.
+ 
+var bubblePop = [];
+
+
+var i = 0;
+
+while (i <= 100) {
+
+		if ( i % 2 === 0 && i % 5 === 0) {
+			bubblePop.push("You're my boy, BLUE!")
+		}
+
+    	else if ( i % 2 === 0 ) {
+      		bubblePop.push("Bubble " + i);
+    	}
+
+      	else if ( i % 5 === 0) {
+      		bubblePop.push("Pop " + i);
+    	}
+    
+    i++;
+    
+  }
+  console.log(bubblePop);
+
+</script>
+</body>
+</html>
+

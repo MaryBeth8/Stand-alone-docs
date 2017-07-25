@@ -1,0 +1,16 @@
+//Multi-dimensional Array example
+
+var arr = [
+	[1,2],[3,4],[5,6]
+];
+
+//This is for looping through each item in arr
+//also called the "outer for loop"
+for (var i = 0; i < arr.length; i++) {
+	
+	//This is for looping through items in each item of arr (sub array)
+	//also called the "inner for loop"
+	for (var j = 0; j < arr.length; j++) {
+	console.log(arr[i][j]);
+	}
+}
