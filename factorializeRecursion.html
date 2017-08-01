@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+/*Return the factorial of the provided integer.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+factorialize(0) should return 1.
+*/
+
+function factorialize(num) {
+  
+  //if check to return 1 if num is 0
+  if (num === 0) {
+    return 1;
+  }
+  
+  //use recursion to return the factorial of num
+  else {
+    return num * factorialize(num - 1);
+  }
+  
+}
+
+factorialize(8);
+
+
+</script>
+</body>
+</html>
