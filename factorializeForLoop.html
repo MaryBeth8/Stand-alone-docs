@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+/*Return the factorial of the provided integer.
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+factorialize(0) should return 1.
+*/
+
+function factorialize(num) {
+  
+  var result = num;
+  
+  //if check to return 1 if num is 0
+  if (num === 0) {
+    result = 1;
+  }
+  
+  //loop to multiply the number by each integer between the number and 1.
+  for(var i = num - 1; i >= 1; i--) {
+    result *= i;
+  }
+  
+  return result;
+}
+
+factorialize(5);
+
+
+</script>
+</body>
+</html>
