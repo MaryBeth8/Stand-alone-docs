@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+/*Return true if the given string is a palindrome. Otherwise, return false.
+A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+*/
+
+function palindrome(str) {
+  
+  //print input to verify
+  console.log(str);
+
+  //print input of string in lower case with all non-alphanumeric characters removed
+  console.log(str.replace(/[\W_]/g, '').toLowerCase());
+  
+  //print reverse of the input string including non-alphanumeric chracters
+  console.log(str.split('').reverse().join(''));
+
+  //print reverse of the input in lower case with all non-alphanumeric characters removed
+  console.log(str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join(''));
+ 
+  //check to see if the input converted to lower case letters with all non-alphanumeric characters removed using RegEx is the same as the reverse of that
+  //return boolean result
+  return str.replace(/[\W_]/g, '').toLowerCase() ===
+          str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+}
+
+palindrome("0_0 (: /-\ :) 0-0");
+
+</script>
+</body>
+</html>
