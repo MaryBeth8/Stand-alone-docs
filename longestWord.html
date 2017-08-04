@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+//Return the length of the longest word in the provided sentence.
+
+function findLongestWord(str) {
+  
+  //split the original string into an array
+  var myStr = str.split(' ');
+  console.log(myStr);
+  
+  //define count variable to track string length
+  var count = 0;
+  
+  //for loop to iterate through the array of strings
+  for (var i = 0; i < myStr.length; i++) {
+    
+    //set count to the length of the longest string in the array
+    if (myStr[i].length > count) {
+      count = myStr[i].length;
+    }
+    
+  }
+  
+  return count;
+}
+
+findLongestWord("Let's find the longest word in this string");
+
+</script>
+</body>
+</html>
